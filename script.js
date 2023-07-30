@@ -4,8 +4,9 @@ const oceanImage = document.getElementById('ocean-image');
 const newImageButton = document.getElementById('newImageButton');
 const emailForm = document.getElementById('emailForm');
 
-// Function to fetch a random ocean image from Pexels API
-async function fetchRandomOceanImage() {
+
+async function fetchRandomOceanImage() // fetchs a random ocean image from Pexels API
+    {
     try {
         const response = await fetch(`https://api.pexels.com/v1/search?query=ocean`, {
             headers: {
@@ -21,7 +22,6 @@ async function fetchRandomOceanImage() {
     }
 }
 
-// Event listeners
 newImageButton.addEventListener('click', fetchRandomOceanImage);
 
 emailForm.addEventListener('submit', function (event) {
@@ -29,12 +29,10 @@ emailForm.addEventListener('submit', function (event) {
     const emailInput = document.querySelector('.email-input');
     const email = emailInput.value.trim();
     if (email !== '') {
-        // Add your logic here to send the email
         console.log(`Sending image to ${email}`);
         emailInput.value = '';
     }
 });
 
-// Fetch a random ocean image when the page loads
 fetchRandomOceanImage();
 
