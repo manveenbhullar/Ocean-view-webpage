@@ -1,81 +1,87 @@
-﻿body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #ddecf6;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 2px solid darkgrey;
-    background-color: #fff;
-    padding: 20px;
-    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-.header {
-    color: #68c6f1;
-}
-
-.image-container {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.send-friend {
-    text-align: center;
-    vertical-align: bottom;
-}
-
-    .send-friend h3 {
-        color: #154c79;
-    }
-
-.email-input {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-}
-
-.send-button {
-    width: 100%;
-    padding: 8px;
-    background-color: #68c6f1;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-    .send-button:hover {
-        background-color: #54b4e9;
-    }
 
 .button1 {
-    background-color: #68c6f1;
-    color: #fff;
+    display: block;
+    border-radius: 8px;
+    background-color: white;
     border: none;
-    padding: 10px 15px;
+    color: cornflowerblue;
+    padding: 10px 12px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
+    font-size: 12px;
+    transition-duration: 0.4s;
+    align-self: center;
 }
 
     .button1:hover {
-        background-color: #54b4e9;
+        background-color: dodgerblue;
+        color: white;
     }
 
-.image-source {
+.right-align,
+.right-align input {
+    float: right;
+}
+
+.left-align {
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+}
+
+body {
+    font-family: "adobe-clean", sans-serif;
+    background-color: #fafafa;
+}
+
+.text1 {
+    background-color: white;
+    color: darkblue;
+    border: 2px solid gray;
+    border-radius: 3px;
+    width: 250px; 
+    margin-bottom: 10px;
+}
+
+.email-bar {
+    display: flex;
+}
+
+    .email-bar .text1 {
+        flex-grow: 1;
+        margin-right: 10px; 
+    }
+
+* {
+    box-sizing: border-box;
+}
+
+
+button:hover:before {
+    content: "Send";
+}
+
+.src {
     font-size: 12px;
+    padding-top: 20px;
     font-style: italic;
+    text-align: left;
+}
+
+td {
+    padding: 5px;
+}
+
+.right-align {
     text-align: right;
 }
