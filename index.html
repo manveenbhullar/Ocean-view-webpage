@@ -1,43 +1,46 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surf the Ocean - Web</title>
 </head>
 
-<body>
-    <div class="center">
-        <table class="container">
-            <tr>
-                <td colspan="2">
-                    <h2 class="header">Surf the Ocean</h2>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="image-container">
-                        <img alt="image from pexels" id="ocean-image" src="" style="height: 250px; width: 350px;">
-                    </div>
-                </td>
-                <td class="send-friend">
-                    <h3>Send it to a friend!</h3>
-                    <form id="emailForm">
-                        <input type="email" class="email-input" placeholder="user@domain.com">
-                        <br>
-                        <input type="submit" class="send-button" value="Send">
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <button class="button1" id="newImageButton">New Image</button>
-                    <p class="image-source">- provided by Pexels</p>
-                </td>
-            </tr>
-        </table>
+<body onload="fetchRandomOceanImage()">
+    <div class="container" style="border: darkgrey;">
+        <form action="mailto:user@domain.com" method="post" enctype="text/plain">
+            <table style="background-color: #ddecf6;">
+                <tr>
+                    <td colspan="2" class="left-align">
+                        <h2 style="color: #68c6f1;">Surf the Ocean</h2>
+                   
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img alt="image from pexel" id="ocean-image" style="width: 60%">
+                        </div>
+                    </td>
+                    <td style="vertical-align: bottom;">
+                        <h3 style="color: #154c79;">Send me to a friend!</h3>
+
+                        <div class="email-bar" id="emailForm">
+                            <input type="text" class="text1 email-input" placeholder="user@domain.com">
+                            <input type="submit" class="button1" value="Send">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="left-align">
+                        <button class="button1" id="newImageButton" type="button">New Image</button>
+                        <p class="src">- provided by Pexels</p>
+                    </td>
+                </tr>
+            </table>
+        </form>
     </div>
 </body>
 
