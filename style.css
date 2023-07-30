@@ -1,0 +1,81 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ddecf6;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    border: 2px solid darkgrey;
+    background-color: #fff;
+    padding: 20px;
+    max-width: 500px;
+}
+
+.header {
+    color: #68c6f1;
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.send-friend {
+    text-align: center;
+    vertical-align: bottom;
+}
+
+    .send-friend h3 {
+        color: #154c79;
+    }
+
+.email-input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.send-button {
+    width: 100%;
+    padding: 8px;
+    background-color: #68c6f1;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+    .send-button:hover {
+        background-color: #54b4e9;
+    }
+
+.button1 {
+    background-color: #68c6f1;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+    .button1:hover {
+        background-color: #54b4e9;
+    }
+
+.image-source {
+    font-size: 12px;
+    font-style: italic;
+    text-align: right;
+}
